@@ -1,0 +1,29 @@
+.Bxloader {
+  width: 100%;
+  height: 100vh;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 10px solid transparent;
+  border-right: 10px solid grey;
+  border-bottom: 10px solid grey;
+  border-left: 10px solid grey;
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  transform: translateX(-50%) rotate(0);
+  animation: rotar 0.5s ease-in-out infinite;
+  z-index: 100;
+}
+
+@keyframes rotar {
+  0% {
+    transform: translateX(-50%) rotate(0);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

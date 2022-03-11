@@ -1,0 +1,10 @@
+.button_next {
+    width: 50%;
+    height: 2rem;
+    background: #0086df;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 10px 1rem rgba(0, 153, 255, 0.1);
+}

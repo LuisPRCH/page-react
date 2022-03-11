@@ -1,0 +1,33 @@
+.gif {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid grey;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  min-height: 200px;
+  min-width: 200px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.gif img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.gif h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gif:hover {
+  transform: scale(1.02);
+}

@@ -1,14 +1,15 @@
 .aside_bar {
   width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid grey;
   border-radius: 10px;
-  padding: 1rem;
-  margin-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .aside_bar ul {

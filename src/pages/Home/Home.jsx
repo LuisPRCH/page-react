@@ -2,7 +2,7 @@ import ListOfGifs from '../../components/ListOfGifs/ListoOfGifs'
 import UseGifs from '../../hooks/UseGifs/UseGifs'
 
 export default function Home() {
-	const { gifs } = UseGifs({ keyword: localStorage.getItem('lastKeyword'), limit: 3 })
+	const { gifs } = UseGifs({ keyword: localStorage.getItem('lastKeyword'), limit: 9 })
 	return (
 		<>
 			<h2>Last Seach</h2>

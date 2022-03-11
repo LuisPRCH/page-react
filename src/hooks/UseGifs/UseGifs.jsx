@@ -3,7 +3,7 @@ import getGifs from '../../services/getGifs'
 
 const INITIAL_PAGE = 0
 
-export default function UseGifs({ keyword, limit = 10 }) {
+export default function UseGifs({ keyword, limit = 9 }) {
 	const [loading, setLoading] = useState(false)
 	const [nextLoading, setNextLoading] = useState(false)
 	const [page, setPage] = useState(INITIAL_PAGE)
@@ -14,7 +14,11 @@ export default function UseGifs({ keyword, limit = 10 }) {
 		getGifs({ keyword, limit }).then(gifs => {
 			setGifs(gifs)
 			setLoading(false)
-			localStorage.setItem('lastKeyword', keyword)
+			if(gifs.length == 0) {
+				localStorage.setItem('lastKeyword', 'ramdon')
+			} else {
+				localStorage.setItem('lastKeyword', keyword)
+			}
 		})
 	}, [keyword, setGifs])
 

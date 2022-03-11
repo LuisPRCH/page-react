@@ -1,5 +1,6 @@
 .button_next {
     width: 50%;
+    max-width: 400px;
     height: 2rem;
     background: #0086df;
     border-radius: 10px;

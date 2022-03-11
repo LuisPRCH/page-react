@@ -5,15 +5,14 @@ import './Search.css'
 export default function Search() {
 	const [keyword, setKeyword] = useState('')
 
-	const [path, location] = useLocation()
+	const [location, setLocation] = useLocation()
 
 	const handleSubmit = evt => {
 		evt.preventDefault()
 		if (keyword === '') {
-			location('/')
+			setLocation('/')
 		} else {
-			location(`${path}search/${keyword}`)
-			setKeyword('')
+			setLocation(`/search/${keyword}`)
 		}
 	}
 

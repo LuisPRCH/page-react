@@ -12,7 +12,7 @@ export default function PopularGifs() {
 	}, [])
 
 	return (
-		<aside className='aside_bar'>
+		<>
 			<h2>Popular Gifs</h2>
 			<ul>
 				{popular.map(popularGif => (
@@ -21,6 +21,6 @@ export default function PopularGifs() {
 					</li>
 				))}
 			</ul>
-		</aside>
+		</>
 	)
 }
